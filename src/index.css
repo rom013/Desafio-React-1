@@ -1,0 +1,46 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background: #181818;
+}
+.app{
+  min-height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.app .screen{
+  height: 80vh;
+  width: 100%;
+}
+.circle{
+  width: 25px;
+  height: 25px;
+  background: greenyellow;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.buttons{
+  display: flex;
+  margin-bottom: 40px;
+  gap: 1rem;
+  z-index:  999;
+}
+.buttons button{
+  background: transparent;
+  border: 2px solid rgb(103, 103, 255);
+  transition: .4s;
+  padding: .8rem 1rem;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.buttons button:hover{
+  background: rgb(103, 103, 255);
+}
